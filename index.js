@@ -9,8 +9,6 @@ app.get('/', function (req, res) {
     res.send('Hello World!');
 });
 
-
-
 app.post('/createEmployee', async function (req, res) {
     const data = await db.createEmployee(req.body);
     if (data.error) {
